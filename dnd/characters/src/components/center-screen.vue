@@ -16,5 +16,6 @@ export default {
   height: 95vh;
   margin: 2.5vh 5vw;
   border: solid white 1px;
+  overflow: hidden;
 }
 </style>

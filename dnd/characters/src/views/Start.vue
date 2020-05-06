@@ -1,7 +1,7 @@
 <template>
   <choice-box>
     <choice-box-item>
-      <router-link to="/new">New character...</router-link>
+      <router-link to="/game">Wake up...</router-link>
     </choice-box-item>
   </choice-box>
 </template>
