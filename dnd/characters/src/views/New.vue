@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div class="center-menu" v-if="!classSelected">
-      <h1>Pick a class</h1>
-      <div class="choice-menu">
+    <choice-box v-if="!classSelected">
+      Pick a character!
+      <choice-box-item>
         <a @click="selectClass('Druid')" class="choice-item">Druid</a>
+      </choice-box-item>
+      <choice-box-item>
         <a @click="selectClass('Wizard')" class="choice-item">Wizard</a>
-      </div>
-    </div>
+      </choice-box-item>
+    </choice-box>
     <div v-else>You are now a {{ selectedClass }}!</div>
   </div>
 </template>

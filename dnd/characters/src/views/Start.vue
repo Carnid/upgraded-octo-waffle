@@ -1,15 +1,19 @@
 <template>
-  <div class="choice-menu center-menu">
-    <router-link to="/new" class="choice-item">New character...</router-link>
-  </div>
+  <choice-box>
+    <choice-box-item>
+      <router-link to="/new">New character...</router-link>
+    </choice-box-item>
+  </choice-box>
 </template>
+
 <script>
 export default {
   name: "Start"
 };
 </script>
+
 <style scoped lang="scss">
-.center-menu {
+.center {
   width: 100%;
   height: 100%;
   justify-content: center;
